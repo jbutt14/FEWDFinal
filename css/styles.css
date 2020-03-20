@@ -1,0 +1,254 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+
+button {
+  background-color: #892789;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #b034b0;
+}
+
+.main-heading {
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  margin: 25px 0px 10px 0px;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 40px;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.top-menu ul {
+  display: flex;
+}
+
+.top-menu a {
+  color: #414e66;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.top-menu a:hover {
+  color: #8392af;
+}
+
+.intro {
+  background-image: url("https://www.stagebio.com/hubfs/Homepage_Header_Cropped_1440x730.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.background-darken {
+  position: relative;
+}
+
+.background-darken:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+}
+
+.intro-content {
+  position: absolute;
+}
+
+.intro-buttons {
+  margin-botttom: 20px;
+  margin-top: 70px;
+}
+
+.tips-by-topic {
+  color: #414e66;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.topic-items a {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: #892789;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.topic-items a:hover {
+  color: #b034b0;
+}
+
+.topic-items ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.tips-at-random {
+  background-color: #414e66;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.indiv-tip {
+  line-height: 1.2;
+}
+
+.indiv-tip li {
+  font-size: 14px;
+}
+
+.indiv-tip img {
+  background-color: white;
+  border: solid #a6a8ab 2px;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.indiv-tip.by-topic {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 50px 50px 250px;
+  grid-column-gap: 25px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.indiv-tip.by-topic img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+  display: block;
+}
+
+.indiv-tip.by-topic h3 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.indiv-tip.by-topic p {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.indiv-tip.by-topic ol {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.indiv-tip.by-random {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: 50px 50px 250px;
+  grid-column-gap: 25px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.indiv-tip.by-random img {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 3;
+  max-width: 100%;
+  height: auto;
+}
+
+.indiv-tip.by-random h3 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.indiv-tip.by-random p {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.indiv-tip.by-random ol {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.annotations {
+  line-height: 1.5;
+}
+
+.white {
+  background-color: white;
+  height: 2px;
+}
+
+footer {
+  height: 60px;
+  background-color: #892789;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav li {
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  list-style: none;
+}
+
+.footer-nav li:hover {
+  color: #a6a8ab;
+}

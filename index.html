@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="" />
+    <title>Jake Butt Final Project</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.svg" alt="logo" class="logo" />
+      <div class="top-menu">
+        <ul>
+          <a href="">By Topic</a>
+          <a href="">Random</a>
+          <a href="">Main Site</a>
+          <a href="">Help</a>
+        </ul>
+      </div>
+    </header>
+
+    <section class="intro background-darken">
+      <div class="intro-content">
+        <h2 class="subtitle">StageBio Applications</h2>
+        <h1 class="main-heading">TIPS & TRICKS</h1>
+        <p>
+          Need help navigating StageBio's applications? <br /><br />
+          Click one of the buttons below to search tips by topic,
+          <br />or have some fun and find a tip at random!
+        </p>
+
+        <div class="intro-buttons">
+          <button id="by-topic">By Topic</button>
+          <br />
+          <br />
+          <button id="random">Random</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-by-topic">
+      <h2>Tips by Topic</h2>
+      <p>Click a topic below to view tips.</p>
+      <div class="topic-items">
+        <ul>
+          <a href="" id="topic-home">Home</a>
+          <a href="" id="topic-studies-list">Studies List</a>
+          <a href="" id="topic-mgmt-snapshot">Study Snapshot</a>
+          <a href="" id="topic-mgmt-timeline">Study Timeline</a>
+          <a href="" id="topic-mgmt-details">Study Details</a>
+          <a href="" id="topic-contacts">Contacts</a>
+          <a href="" id="topic-clients">Clients</a>
+          <a href="" id="topic-admin">Administration</a>
+        </ul>
+      </div>
+
+      <div class="indiv-tip by-topic">
+        <img src="../images/home-layout.png" alt="" class="tip-image" />
+        <h3>HEADING/TITLE</h3>
+        <p class="tip-descrip">
+          Here is an example description for the currently loaded tip. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+          repellendus? Laborum, molestias sunt est blanditiis ducimus distinctio
+          repudiandae odio beatae ipsam architecto consequatur nam ex officia
+          ipsa debitis nihil quia.
+        </p>
+        <ol class="annotations">
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="tips-at-random">
+      <h2>Random Tips</h2>
+      <p>Click the button below for a random tip.</p>
+      <button id="random-tip">Random Tip</button>
+
+      <div class="indiv-tip by-random">
+        <h3>HEADING/TITLE</h3>
+        <p class="tip-descrip">
+          Here is an example description for the currently loaded tip. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+          repellendus? Laborum, molestias sunt est blanditiis ducimus distinctio
+          repudiandae odio beatae ipsam architecto consequatur nam ex officia
+          ipsa debitis nihil quia.
+        </p>
+        <img src="../images/home-layout.png" alt="" />
+        <ol class="annotations">
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+          <li>Example list item (to be removed)</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="white"></div>
+
+    <footer>
+      <p>(c) StageBio 2020</p>
+      <ul class="footer-nav">
+        <li>Home</li>
+        <li>Contact Us</li>
+        <li>Careers</li>
+        <li>Site Map</li>
+      </ul>
+    </footer>
+
+    <!--Bootstrap JS loaders-->
+    <script
+      src="js/jquery.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="js/popper.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="js/bootstrap.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
