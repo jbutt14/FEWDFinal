@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="css/bootstrap.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -18,102 +18,258 @@
     />
     <title>Jake Butt Final Project</title>
   </head>
+
   <body>
-    <header>
-      <img src="../images/logo.svg" alt="logo" class="logo" />
-      <div class="top-menu">
-        <ul>
-          <a href="">By Topic</a>
-          <a href="">Random</a>
-          <a href="">Main Site</a>
-          <a href="">Help</a>
+    <nav class="navbar navbar-expand-sm nav-menu">
+      <img src="../images/logo.svg" alt="logo" class="navbar-brand" />
+      <button
+        class="navbar-toggler hamburger-button"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">Menu</span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#section-topic-tip" id="menu-button-home"
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#section-random-tip"
+              id="menu-button-random"
+              >Random Tip</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >By Topic</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="dropdown-item"
+                href="#section-topic-tip"
+                id="menu-button-home-layout"
+                >Home Layout</a
+              >
+              <a
+                class="dropdown-item"
+                href="#section-topic-tip"
+                id="menu-button-snapshot"
+                >Study Snapshot</a
+              >
+              <a
+                class="dropdown-item"
+                href="#section-topic-tip"
+                id="menu-button-timeline"
+                >Study Timeline</a
+              >
+              <a
+                class="dropdown-item"
+                href="#section-topic-tip"
+                id="menu-button-details"
+                >Study Details</a
+              >
+              <a
+                class="dropdown-item"
+                href="#section-topic-tip"
+                id="menu-button-admin"
+                >Administration</a
+              >
+            </div>
+          </li>
         </ul>
       </div>
-    </header>
+    </nav>
 
-    <section class="intro background-darken">
-      <div class="intro-content">
-        <h2 class="subtitle">StageBio Applications</h2>
-        <h1 class="main-heading">TIPS & TRICKS</h1>
-        <p>
-          Need help navigating StageBio's applications? <br /><br />
-          Click one of the buttons below to search tips by topic,
-          <br />or have some fun and find a tip at random!
-        </p>
+    <div class="container-fluid">
+      <div class="row intro background-darken">
+        <div class="intro-content">
+          <h2 class="subtitle">StageBio Applications</h2>
+          <h1 class="main-heading">TIPS & TRICKS</h1>
+          <br />
+          <p>
+            Need help navigating StageBio's applications? <br />
+            Click one of the buttons below to search tips by topic,
+            <br />or have some fun and find a tip at random!
+          </p>
 
-        <div class="intro-buttons">
-          <button id="by-topic">By Topic</button>
-          <br />
-          <br />
-          <button id="random">Random</button>
+          <div class="intro-buttons">
+            <button id="intro-button-topic" class="button-purple">
+              By Topic
+            </button>
+            <br />
+            <br />
+            <button id="intro-button-random" class="button-purple">
+              Random
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="tips-by-topic">
-      <h2>Tips by Topic</h2>
-      <p>Click a topic below to view tips.</p>
-      <div class="topic-items">
-        <ul>
-          <a href="" id="topic-home">Home</a>
-          <a href="" id="topic-studies-list">Studies List</a>
-          <a href="" id="topic-mgmt-snapshot">Study Snapshot</a>
-          <a href="" id="topic-mgmt-timeline">Study Timeline</a>
-          <a href="" id="topic-mgmt-details">Study Details</a>
-          <a href="" id="topic-contacts">Contacts</a>
-          <a href="" id="topic-clients">Clients</a>
-          <a href="" id="topic-admin">Administration</a>
-        </ul>
+    <div class="container-fluid">
+      <div class="row tips-by-topic">
+        <h2>Tips by Topic</h2>
+        <p>Cycle through various topics below. (Hover to pause.)</p>
+      </div>
+      <div class="row" id="section-topic-tip">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="10000"
+          data-pause="hover"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col-md-7">
+                <img
+                  class="w-100"
+                  src="../images/home-layout.png"
+                  alt="First slide"
+                />
+              </div>
+              <div class="col-md-5">
+                <h3>HOME LAYOUT</h3>
+                <p>
+                  Use this layout to view your dashboard, charge time again
+                  projects, generate reports, and more.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-7">
+                <img
+                  class="w-100"
+                  src="../images/studies_snapshot.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="col-md-5">
+                <h3>STUDIES SNAPSHOT LAYOUT</h3>
+                <p>
+                  This tab contains only the most important information relating
+                  to this study (think of it as your Study Dashboard).
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-7">
+                <img
+                  class="w-100"
+                  src="../images/studies_timeline.png"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="col-md-5">
+                <h3>STUDIES TIMELINE LAYOUT</h3>
+                <p>
+                  This tab shows the complete timeline of upcoming events for
+                  the selected study.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-7">
+                <img
+                  class="w-100"
+                  src="../images/studies_details.png"
+                  alt="Fourth slide"
+                />
+              </div>
+              <div class="col-lg-5">
+                <h3>STUDIES DETAILS LAYOUT</h3>
+                <p>
+                  This tab allows for entry of broad-purpose study details, such
+                  as assigned personnel and other study-specific information.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-7">
+                <img
+                  class="w-100"
+                  src="../images/admin.png"
+                  alt="Fifth slide"
+                />
+              </div>
+              <div class="col-md-5">
+                <h3>ADMINISTRATION LAYOUT</h3>
+                <p>
+                  Use this layout to add task types, administer user accounts,
+                  and define other items.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid tips-at-random">
+      <div class="row" id="section-random-tip">
+        <div class="col-xl-12">
+          <h2>Tips at Random</h2>
+        </div>
+        <div class="col-xl-12">
+          <p>Click the button below to display a tip at random.</p>
+        </div>
+        <div class="col-xl-12">
+          <button id="random-tip" class="button-purple">Random Tip</button>
+        </div>
       </div>
 
-      <div class="indiv-tip by-topic">
-        <img src="../images/home-layout.png" alt="" class="tip-image" />
-        <h3>HEADING/TITLE</h3>
-        <p class="tip-descrip">
-          Here is an example description for the currently loaded tip. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-          repellendus? Laborum, molestias sunt est blanditiis ducimus distinctio
-          repudiandae odio beatae ipsam architecto consequatur nam ex officia
-          ipsa debitis nihil quia.
-        </p>
-        <ol class="annotations">
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-        </ol>
+      <br />
+
+      <div class="row">
+        <div class="col-md-5 random-tip-content">
+          <h3 id="random-tip-heading">HOME LAYOUT</h3>
+          <p class="tip-descrip" id="random-tip-text">
+            Use this layout to view your dashboard, charge time again projects,
+            generate reports, and more.
+          </p>
+        </div>
+        <div class="col-md-7">
+          <img
+            src="../images/home-layout.png"
+            alt=""
+            class="w-100"
+            id="random-tip-image"
+          />
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="tips-at-random">
-      <h2>Random Tips</h2>
-      <p>Click the button below for a random tip.</p>
-      <button id="random-tip">Random Tip</button>
+    <div class="row white"></div>
 
-      <div class="indiv-tip by-random">
-        <h3>HEADING/TITLE</h3>
-        <p class="tip-descrip">
-          Here is an example description for the currently loaded tip. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-          repellendus? Laborum, molestias sunt est blanditiis ducimus distinctio
-          repudiandae odio beatae ipsam architecto consequatur nam ex officia
-          ipsa debitis nihil quia.
-        </p>
-        <img src="../images/home-layout.png" alt="" />
-        <ol class="annotations">
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-          <li>Example list item (to be removed)</li>
-        </ol>
-      </div>
-    </section>
-
-    <div class="white"></div>
-
-    <footer>
+    <div class="footer" id="section-footer">
       <p>(c) StageBio 2020</p>
       <ul class="footer-nav">
         <li>Home</li>
@@ -121,22 +277,22 @@
         <li>Careers</li>
         <li>Site Map</li>
       </ul>
-    </footer>
+    </div>
 
     <!--Bootstrap JS loaders-->
     <script
-      src="js/jquery.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="js/popper.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
-      src="js/bootstrap.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
 
